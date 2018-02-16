@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>カンボジアの不動産ならBranch of Fuji Realty Co.,Ltdまで</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="copyright" content="Template Party">
+<meta name="description" content="カンボジアプノンペンシェムリアップの賃貸売買投資物件ならBranch of Fuji Realty Co.,Ltdにお問い合わせ下さい。">
+<meta name="keywords" content="カンボジア,プノンペン,不動産,仲介,賃貸,売買,移住,コンドミニアム,アパートメント,サービスアパートメント,Villa,フラットハウス">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="/images/favicon.png">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<script type="text/javascript" src="js/openclose.js"></script>
+</head>
+
+<body class="s-n">
+
+<header>
+<div class="inner">
+<h1><a href=""><img src="images/fuji-03.png" alt="Logo" id="logo"></a></h1>
+<span id="title">カンボジアの不動産ならBranch of Fuji Realty Co.,Ltdまで！</span>
+<div id="imgtiltle">
+    <img src="images/title.jpg" alt="タイトル">
+</div>
+<address>受付：8：00～17：00(月〜金)<br><small>※日曜・祝日　※土曜日についてはお問い合わせ下さい。</small><br><span class="tel"><small><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+023 219 021(カンボジア国内から)<br><i class="fa fa-volume-control-phone" aria-hidden="true"></i> +855-23-210-021(海外から)</small></span></address>
+</div>
+</header>
+
+<nav id="menubar">
+<ul class="menu">
+<li><a href="http://cambodia.fuji-realty.asia/">ホーム</a></li>
+<li><a href="http://cambodia.fuji-realty.asia/?act=list&kind=0">物件検索</a></li>
+<li><a href="#">購入物件を探す</li>
+<li><a href="http://cambodia.fuji-realty.asia/seminar.html">セミナー/ツアー</a></li>
+<li><a href="http://cambodia.fuji-realty.asia/aboutcambodia.html">カンボジアについて</a></li>
+<li><a href="http://cambodia.fuji-realty.asia/company.html">会社案内</a></li>
+<li><a href="http://cambodia.fuji-realty.asia/contact.html">お問い合わせ</a></li>
+</ul>
+</nav>
+<div id="contents">
+
+<div id="contents-in">
+
+<div id="main">
+
+<section>
+
+<h2>物件お問い合わせフォーム</h2>
+
+<!--{ndef mode}-->
+<p class="color1">お問い合わせ内容を送信しました。</p>
+<!--{/ndef}-->
+
+<!--{def mode}-->
+<p class="color1">※全項目入力必須です。<br>※お問い合わせ内容送信後は、改めて担当者より回答をお送りいたしますので、<br>しばらくお待ちください</p>
+<!--{def message}-->
+<p class="color1">{val message}</p>
+<!--{/def}-->
+
+<form name="form1" method="post" action="?act=toiawase">
+<input type="hidden" name="mode" value="{val mode}">
+<input type="hidden" name="id" value="{val item/info_id}">
+<table class="ta1 mb15">
+<tr>
+<th>物件ID</th>
+<td>{val item/info_id}</td>
+</tr>
+<tr>
+<th>物件名称</th>
+<td>{val item/title}</td>
+</tr>
+<tr>
+<th>お名前</th>
+<td>
+<!--{def confirm}-->
+{val form/name}
+<!--{/def}-->
+<!--{ndef confirm}-->
+<input type="text" name="name" size="30" class="ws" value="{val form/name}" />
+<!--{/ndef}-->
+</td>
+</tr>
+<tr>
+<th>メールアドレス</th>
+<td>
+<!--{def confirm}-->
+{val form/email}
+<!--{/def}-->
+<!--{ndef confirm}-->
+<input type="text" name="email" size="50" class="ws" value="{val form/email}" />
+<!--{/ndef}-->
+</td>
+</tr>
+<tr>
+<th>お問い合わせ詳細 </th>
+<td>
+<!--{def confirm}-->
+{val form/comment}
+<!--{/def}-->
+<!--{ndef confirm}-->
+<textarea name="comment" cols="60" rows="8" class="wl">{rval form/comment}</textarea>
+<!--{/ndef}-->
+</td>
+</tr>
+</table>
+
+<div class="c">
+<!--{def confirm}-->
+<input type="submit" value="この内容で送信する" />
+<!--{/def}-->
+<!--{ndef confirm}-->
+<input type="submit" value="確認する" />
+<!--{/ndef}-->
+</div>
+</form>
+<!--{/def}-->
+
+<p><a href="?act=bukken&id={val item/info_id}">&lt;&lt; 前のページに戻る</a></p>
+
+</section>
+
+</div>
+<!--/main-->
+
+<div id="sub">
+
+  <nav id="box1">
+    <h2><i class="fa fa-search" aria-hidden="true"></i> 賃貸物件カテゴリー<br><small>Select by property type</small></h2>
+    <ul>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=1">サービスアパートメント<br /><small>Service Apartment</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=2">アパートメント<br /><small>Apartment</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=3">フラットハウス<br /><small>Frat House</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=4">グランドビラ<br /><small>Ground Villa</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=5">ランド<br /><small>Land</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=6">オフィス<br /><small>Office</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=7">店舗<br /><small>Shop</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=8">コンドミニアム<br /><small>Condominium</small></a></li>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=9">ビルディング<br /><small>Building</small></a></li>
+    </ul>
+  </nav>
+
+  <nav id="box1">
+    <h2><i class="fa fa-search" aria-hidden="true"></i> 売買物件カテゴリー<br><small>Select by property type</small></h2>
+    <ul>
+      <li><a class="hvr-bubble-right" href="./?act=list&kind=10">コンドミニアム<br /><small>Condominium</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">フラットハウス<br /><small>Frat House</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">グランドビラ<br /><small>Ground Villa</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">倉庫<br /><small>Warehouse</small></a></li>
+    </ul>
+  </nav>
+
+  <nav id="box1">
+    <h2><i class="fa fa-search" aria-hidden="true"></i> 間取りで検索<br><small>Choose by floor plan</small></h2>
+    <ul>
+      <li><a class="hvr-bubble-right" href="#">スタジオタイプ<br /><small>Studio Type</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">1ベットルーム<br /><small>1Bed Room</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">2ベットルーム<br /><small>2Bed Room</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">3ベッドルーム<br /><small>3Bed Room</small></a></li>
+    </ul>
+  </nav>
+
+  <nav id="box1">
+    <h2><i class="fa fa-map" aria-hidden="true"></i> エリアから選ぶ<br><small>Select by area</small></h2>
+    <ul>
+      <li><a class="hvr-bubble-right" href="#">セントラル・マーケット周辺<br><small>Central Market Area</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">ダイヤモンドアイランド周辺<br><small>Diamond Island Area</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">ボンケンコンエリア<br><small>Bokkenkon Area</small></a></li>
+      <li><a class="hvr-bubble-right" href="#">リバーサイド・王宮エリア<br><small>Riverside Area</small></a></li>
+    </ul>
+  </nav>
+
+</div>
+<!--/sub-->
+
+</div>
+<!--/contents in-->
+
+<div id="side">
+
+<section class="mb1em">
+    <a href="http://time-square.fuji-realty.asia/" target="_blank"><img src="images/timesquare.jpg" width="250" height="240" alt="タイムスクエア"></a>
+    <p><a href="http://time-square.fuji-realty.asia/" target="_blank">TIME SQUARE</a></p>
+</section>
+
+<section class="mb1em">
+    <a href="http://theview.fuji-realty.asia/" target="_blank"><img src="images/theview.jpg" width="250" height="240" alt="THE VIEW"></a>
+    <p><a href="http://theview.fuji-realty.asia/" target="_blank">THE VIEW</a></p>
+</section>
+
+<section class="mb1em">
+    <img src="images/toushi.jpg" width="250" height="240" alt="投資物件">
+    <p><a href="#">投資物件視察ツアー</a></p>
+</section>
+
+<section class="mb1em">
+    <img src="images/seminer.jpg" width="250" height="240" alt="セミナー">
+    <p><a href="#">セミナーの開催予定</a></p>
+</section>
+
+<section class="mb1em">
+<a href="http://thai.fuji-realty.asia/yokuaru.html"><img src="images/shitsumon.jpg" width="250" height="240" alt="質問"></a>
+<p><a href="http://thai.fuji-realty.asia/yokuaru.html">よくあるご質問をまとめました。</a></p>
+</section>
+
+<section class="mb1em">
+<a href="http://form.os7.biz/f/dd79b177/" target="_blank"><img src="images/mail.jpg" alt="メール"></a>
+<p><a href="http://form.os7.biz/f/dd79b177/">メルマガ会員募集中！</a></p>
+</section>
+
+<section class="mb1em">
+<a href="https://ameblo.jp/shonankotaro/" target="_blank"><img src="./images/shonan.jpg" alt="ブログ" width="250" height="240"></a>
+<p><a href=https://ameblo.jp/shonankotaro/""><span style="color: red;">【ブログ】</span>湘南小太郎のひとり言</a></p>
+</section>
+
+</div>
+<!--/side-->
+
+<p id="pagetop"><a href="#">↑ PAGE TOP</a></p>
+
+</div>
+<!--/contents-->
+
+<footer>
+<small>Copyright&copy; 2017 <a href="./">Branch of Fuji Realty Co.,Ltd</a> All Rights Reserved.</small>
+<span class="pr"><a href="http://template-party.com/" target="_blank">Web Design:Template-Party</a></span>
+</footer>
+
+<!--スマホ用メニューバー-->
+<img src="images/icon_bar.png" width="20" height="16" alt="" id="menubar_hdr" class="close">
+<script type="text/javascript">
+if (OCwindowWidth() < 480) {
+	open_close("menubar_hdr", "menubar");
+}
+</script>
+<script src="https://use.fontawesome.com/b61be28924.js"></script>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=1814063402208986";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+</body>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.8&appId=1814063402208986";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-98444003-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+</html>
