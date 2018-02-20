@@ -1369,7 +1369,7 @@ table#table6 {
   width: 140px;
   padding: 10px;
   text-align: center;
-  background-color: #ffeeb3;
+  background-color: #f8f8f8;
 }
 
 h2.mb15 {
@@ -1993,6 +1993,11 @@ div#small_comment {
 
 h2#madori_midashi {
   height: 38px;
+  padding: 0.25em 0.5em;
+  color: #494949;
+  background: transparent;
+  border-left: solid 5px #f2ad02;
+  font-size: 24px;
 }
 
 .contact {
