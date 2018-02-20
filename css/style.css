@@ -1900,6 +1900,7 @@ div#button_syousai {
   width: 280px;
   height: 80px;
   margin: 0 0 0 5px;
+  clear: both;
 }
 
 #main02 h2 {
@@ -2860,4 +2861,7 @@ img.khf {
 }
 img.newicon {
     margin: 0px 0 0 30px;
+}
+span.date {
+    float: right;
 }
