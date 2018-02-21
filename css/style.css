@@ -500,10 +500,11 @@ body.c2 #main section.list article table td, body.c2 #main01 section.list01 arti
 }
 
 .ta1 {
-  width: 99%;
+  width: 100%;
   border: 1px solid #ccc;
   line-height: 2;
-  /* margin: 39px 0 0 0;*/
+  /* margin: 39px 0 0 0; */
+  margin-bottom: 10px;
 }
 
 .ta1 td, .ta1 th {
@@ -2530,10 +2531,32 @@ div#boxArea {
   font-weight: bold;
 }
 
+.in_otoiawase dl dd {
+    margin-left: 300px;
+    line-height: 24px;
+}
+
+.in_otoiawase1 dl dd {
+    margin-left: 300px;
+    line-height: 24px;
+}
+
 #main02 dl dd {
   margin-left: 200px;
   line-height: 24px;
 }
+
+.in_otoiawase dl dt {
+    margin-left: 300px;
+    font-weight: bold;
+}
+
+.in_otoiawase1 dl dt {
+    margin-left: 300px;
+    font-weight: bold;
+}
+
+
 
 .box28 {
     position: relative;
