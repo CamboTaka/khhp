@@ -249,7 +249,7 @@ body.c2 #side {
 
 #side .box1, #side01 .box1, #side02 .box1, #sub .box1 {
   margin-bottom: 15px;
-  border: 1px solid #e2a125;
+  border: 1px solid #cfcfcf;
   background-color: #fff
 }
 
@@ -275,7 +275,8 @@ body.c2 #side {
   /* padding-left: 10px; */
   background: #fff;
   -webkit-transition: .5s;
-  transition: .5s
+  transition: .5s;
+  height: 38px;
 }
 
 #side ul li a:hover, #side01 ul li a:hover, #side02 ul li a:hober, #sub ul li a:hover {
@@ -1131,7 +1132,8 @@ img {
 
 .box1 input[type=submit] {
   width: 188px;
-  margin: 0 0 0 13px
+  margin: 0 0 0 13px;
+  border-radius: 5px;
 }
 
 section#new, section#serch {
@@ -2527,7 +2529,7 @@ div#boxArea {
 }
 
 #main02 dl dt {
-  margin-left: 200px;
+  margin-left: 300px;
   font-weight: bold;
 }
 
@@ -2542,7 +2544,7 @@ div#boxArea {
 }
 
 #main02 dl dd {
-  margin-left: 200px;
+  margin-left: 300px;
   line-height: 24px;
 }
 
