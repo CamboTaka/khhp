@@ -98,33 +98,15 @@
   <!-- Swiper -->
   <div class="swiper-container">
     <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./images/chin_bai.png" width="100%" alt="賃貸物件 売買物件" /></div>
       <div class="swiper-slide"><img src="./images/jtower-banner.jpg" width="100%" alt="街並み" /></div>
       <div class="swiper-slide"><img src="./images/top_swipperbanner.jpg" width="100%" alt="オフィス" /></div>
     </div>
-    <!-- Add Pagination -->
-    <div class="swiper-pagination"></div>
     <!-- Add Arrows -->
     <div class="swiper-button-next"></div>
     <div class="swiper-button-prev"></div>
   </div>
   <!-- Swiper -->
-  <div class="swiper-container gallery-top">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/1)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/2)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/3)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/4)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/5)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/6)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/7)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/8)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/9)"></div>
-      <div class="swiper-slide" style="background-image:url(http://lorempixel.com/1200/1200/nature/10)"></div>
-    </div>
-    <!-- Add Arrows -->
-    <div class="swiper-button-next swiper-button-white"></div>
-    <div class="swiper-button-prev swiper-button-white"></div>
-  </div>
   <!-- div.main-search -->
   <div class="main-search">
     <div id="main-search_wrap" class="hover12 column">
@@ -152,7 +134,7 @@
   <!-- div.main-search -->
   <!-- サムネイル スライダー
   <div id="thumbnail">
-    <div id="roll_window" style="position:absolute; width:670px; height:130px; overflow:hidden; margin-left:0px;">
+    <div id="roll_window" style="position:absolute; width:670px; height:130px; overflosta:hidden; margin-left:0px;">
       <div id="roll_contents" style="position:absolute; left:0; width:1100px;">
         <span class="photolst">
           <a href="#"><img src="images/photo1.jpg" width="100" height="100" alt="title1" /><br />sample title1</a>
@@ -664,13 +646,16 @@
       </div>
       <!-- BEGIN: Email Marketing By Benchmark Email ------>
       <div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">
-        <div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;"><a href="//www.benchmarkemail.com" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing Services</a> by Benchmark</div>
+        <div align="center" style="padding-top:5px;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;margin-bottom: 10px;"><a href="//www.benchmarkemail.com" target="_new" style="text-decoration:none;font-family:Arial,Helvetica,sans-serif;font-size:10px;color:#999999;">Email Marketing Services</a> by Benchmark</div>
       </div>
       <!-- END: Email Marketing By Benchmark Email ---------->
 
       <!-- END: Signup Form Manual Code from Benchmark Email Ver 2.0 ------>
 
-
+      <section class="mb1em">
+        <a href="./?act=list&html=staff.html" target="_blank"><img src="images/staff_.png" width="250" height="240" alt="スタッフ紹介"></a>
+        <p><small><a href="./?act=list&html=staff.html" target="_blank">富士リアルティ カンボジア支店　スタッフ紹介</a></small></p>
+      </section>
 
       <section class="mb1em">
         <a href="http://thepeak.fuji-realty.asia/" target="_blank"><img src="images/thepeak.jpg" width="250" height="240" alt="The Peak"></a>
@@ -789,13 +774,12 @@
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="js/lity.js"></script>
   <script type="text/javascript" src="js/openclose.js"></script>
-  <script src="//kitchen.juicer.cc/?color=+GQ7Z8qCh5A=" async></script>
   <script type="text/javascript" src="js/rollimg.js"></script>
   <script src="https://use.fontawesome.com/b61be28924.js"></script>
   <!--スライドショースクリプト-->
   <script type="text/javascript" src="js/rollimg.js"></script>
   <script type="text/javascript" src="js/calender.js" charset="UTF-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.6/js/swiper.min.js"></script>
+  <script type="text/javascript" src="js/swiper.min.js"></script>
   <script type="text/javascript" src="js/jquery.fs.naver.js"></script>
   <script type="text/javascript">
     $(function() {
@@ -843,18 +827,15 @@
     ga('send', 'pageview');
   </script>
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      var swiper = new Swiper('.swiper-container', {
-        speed: 1000,
-        autoplay: 3000,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-      });
-    }, false);
+  var swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: true,
+    speed: 1000,
+    loop: true,
+  });
   </script>
 </body>
 
