@@ -91,12 +91,12 @@
           </div>
           <!--{each list}-->
           <article>
-            <h4>
-                {val list/title}[No.{val list/info_id}]
+            <h3>
                 <!--{def list/new_flag}--><img src="images/icon_new.gif" alt="NEW" width="30" height="11"><!--{/def}-->
                 <!--{def list/recommend3}--> キャンペーン物件 <!--{/def}-->
                 <!--{def list/pdf}-->PDF資料あり<!--{/def}-->
-              </h4>
+                {val list/title}[No.{val list/info_id}]
+              </h3>
             <div id="list_wrap">
               <div id="list_imgin">
                 <figure id="centerimg">
@@ -149,7 +149,6 @@
                 </table>
                 <span class="date">【物件登録日:{val list/regdate/0}/{val list/regdate/1}/{val list/regdate/2} {val list/regtime/0}:{val list/regtime/1}】
 								【最終更新日:{val list/update/0}/{val list/update/1}/{val list/update/2} {val list/uptime/0}:{val list/uptime/1}】</span>
-                <!-- <p id="list_contents">{val list/special/title}</p> -->
               </div>
               <!--{def list/recommend1}--><span class="osusume">おすすめ</span>
               <!--{/def}-->
@@ -215,11 +214,13 @@
           <input type="hidden" name="html" value="{val html}">
           <input type="hidden" name="top" value="{val top}">
           <input type="hidden" name="page" value="">
+          <h3 class="box_title"><img class="khf" src="./images/mushimegane.png" alt="虫眼鏡" width="20">物件検索</h3>
           <table class="ta1 mb15">
-            <caption>{val title}検索</caption>
             <tr>
-              <td>
-                物件の種類で検索<br />
+              <th id="t1">物件の種類</th>
+            </tr>
+            <tr>
+              <td headers="t1">
                 <input type="checkbox" name="info3C[]" value="サービスアパートメント" {val form/info3Cサービスアパートメント}/>サービスアパートメント<br>
                 <input type="checkbox" name="info3C[]" value="アパートメント" {val form/info3Cアパートメント}/>アパートメント<br>
                 <input type="checkbox" name="info3C[]" value="フラットハウス" {val form/info3Cフラットハウス}/>フラットハウス<br>
@@ -232,8 +233,10 @@
               </td>
             </tr>
             <tr>
-              <td>
-                間取りで検索<br />
+              <th id="t2">間取り</th>
+            </tr>
+            <tr>
+              <td headers="t2">
                 <input type="checkbox" name="info8C[]" value="スタジオルーム" {val form/info8Cスタジオルーム}/>スタジオルーム<br>
                 <input type="checkbox" name="info8C[]" value="1ベッドルーム" {val form/info8C1ベッドルーム}/>1ベッドルーム<br>
                 <input type="checkbox" name="info8C[]" value="2ベッドルーム" {val form/info8C2ベッドルーム}/>2ベッドルーム<br>
@@ -244,44 +247,54 @@
               </td>
             </tr>
             <tr>
-              <td>
-                エリアで検索<br />
-                <input type="checkbox" name="info2C[]" value="TTP1" {val form/info2CTTP1}/>トゥールトンポン1<br>
-                <input type="checkbox" name="info2C[]" value="TTP2" {val form/info2CTTP2}/>トゥールトンポン2<br>
-                <input type="checkbox" name="info2C[]" value="BKK1" {val form/info2CBKK1}/>ボンケンコン1<br>
-
+              <th id="t3">エリア</th>
+            </tr>
+            <tr>
+              <td headers="t3">
+                <input type="checkbox" name="info2C[]" value="TTP1" {val form/info2CTTP1}/>Chamkar Mon&nbsp;<small>チャムカーモン</small><br>
+                <input type="checkbox" name="info2C[]" value="TTP2" {val form/info2CTTP2}/>7 Meakkara&nbsp;<small>7マカラ</small><br>
+                <input type="checkbox" name="info2C[]" value="BKK1" {val form/info2CBKK1}/>Doun Penh&nbsp;<small>ドウンペン</small><br>
+                <input type="checkbox" name="info2C[]" value="BKK1" {val form/info2CBKK1}/>Sensok&nbsp;<small>センソック</small><br>
+                <input type="checkbox" name="info2C[]" value="BKK1" {val form/info2CBKK1}/>Tuol Kouk&nbsp;<small>トゥールコック</small><br>
               </td>
             </tr>
             <tr>
-              <td>
-                物件管理番号で検索<br>
-                <input type="input" name="info1" value="{val form/info1}" class="ws" placeholder="入力して下さい"><br>(部分一致検索)
-              </td>
+              <th id="t4">こだわり検索</th>
             </tr>
             <!--{def form/special}-->
             <tr>
-              <td>
-                こだわりで検索
+              <td headers="t4">
                 <!--{each form/special}-->
                 <div class="specialbox">
                   <label for="special{val form/special/no}">
-                      <input type="checkbox" name="special{val form/special/no}" id="special{val form/special/no}" value="{val form/special/no}"  /><!--{def form/special/value}-->checked<!--{/def}-->
-                      <!--{def form/special/icon}-->
-                      <img src="icon/{val form/special/icon}" alt="{val form/special/title}" title="{val form/special/title}">
-                      <!--{/def}-->
-                      <!--{ndef form/special/icon}-->
-                      {val form/special/title}&nbsp;&nbsp;
-                      <!--{/def}-->
-                      &nbsp;</label>
+                    <input type="checkbox" name="special{val form/special/no}" id="special{val form/special/no}" value="{val form/special/no}"  /><!--{def form/special/value}-->checked<!--{/def}-->
+                    <!--{def form/special/icon}-->
+                    <img src="icon/{val form/special/icon}" alt="{val form/special/title}" title="{val form/special/title}">
+                    <!--{/def}-->
+                    <!--{ndef form/special/icon}-->
+                    {val form/special/title}&nbsp;&nbsp;
+                    <!--{/def}-->
+                    &nbsp;
+                  </label>
                 </div>
                 <!--input type="hidden" name="special{val form/special/value}" value="{val form/special/value}"-->
                 <!--{/each}-->
               </td>
             </tr>
             <!--{/def}-->
+            <tr>
+              <th id="t5">物件管理番号検索</th>
+            </tr>
+            <tr>
+              <td headers="t5">
+                <input type="input" name="info1" value="{val form/info1}" class="ws" placeholder="入力して下さい"><br>(部分一致検索)
+              </td>
+            </tr>
           </table>
           <div class="c big1 mb1em"><input type="submit" value="この条件で検索する">&nbsp;</div>
         </form>
+        <a href="http://cambodia.fuji-realty.asia/?act=list&html=moshikomi.html" target="_blank"><img src="./images/contract_flowside.png" alt="物件の契約の流れ" /></a>
+        <a href="http://cambodia.fuji-realty.asia/?act=list&html=moshikomi.html" target="_blank"><p>カンボジア 物件の契約の流れ</p></a>
       </aside>
     </div>
     <!--/side-->

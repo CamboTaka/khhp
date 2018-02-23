@@ -204,8 +204,9 @@ body.c2 #main, body.c2 #main01, body.c2 #main02 {
 }
 
 #side {
-  width: 253px;
-  margin: 0 -8px 0 0
+  width: 247px;
+  margin: 0 -8px 0 0;
+  float: left;
 }
 
 #side02 {
@@ -404,7 +405,7 @@ footer a:hover {
 }
 
 #main section.list article a, #main01 section.list01 article a, #main02 section.list article a {
-  padding: 10px;
+  padding: 5px;
   text-decoration: none;
   display: block;
   overflow: hidden;
@@ -1345,7 +1346,8 @@ input[type=button], input[type=reset], input[type=submit] {
   font-size: 14px;
   color: #fff;
   border: 0;
-  margin-top: 10px
+  /* margin-top: 10px;*/
+  border-radius: 5px;
 }
 
 table#table1 {
@@ -1572,7 +1574,7 @@ h2#midashi {
 }
 
 #main02 figure.mb15.c {
-  width: 100%;
+  width: 50%;
   border: 0 solid;
   /* padding: 10px 0 0; */
   float: none;
@@ -1580,11 +1582,13 @@ h2#midashi {
 
 #main02 article table#table4 {
   width: 100%;
-  margin: 10px 0 0;
+  margin: 10px 0 10px 0;
+  float: right;
 }
 
 #main02 article table#table1 {
-  width: 100%;
+  width: 49%;
+  float: right;
 }
 
 table#table2 {
@@ -1995,12 +1999,13 @@ div#small_comment {
 }
 
 h2#madori_midashi {
-  height: 38px;
+  height: 30px;
   padding: 0.25em 0.5em;
   color: #494949;
   background: transparent;
   border-left: solid 5px #f2ad02;
-  font-size: 24px;
+  /* border-radius: 5px 5px 5px 5px; */
+  font-size: 22px;
 }
 
 .contact {
@@ -2963,8 +2968,22 @@ span.date {
     font-size: 14px;
     line-height: 35px;
 }
-
 div.side_floatr {
     float: right;
     width: 880px;
+}
+.table_tit {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    background: #dfe1c8;
+}
+#main01 .list01 h3 {
+    font-size: 15pt;
+    text-align: center;
+    padding: 0px 0 0px 2px;
+    border-bottom: 1px solid #ccc;
+    /* border-left: 3px solid #f2ad02; */
+    margin-bottom: .5em;
+    color: #000;
 }
