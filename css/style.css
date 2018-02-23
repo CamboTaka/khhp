@@ -1203,7 +1203,7 @@ section.box1 p {
 }
 
 #side01 {
-  float: right;
+  float: left;
   width: 247px;
   padding-bottom: 30px;
   /* margin: -39px 0 0 0;*/
@@ -2962,4 +2962,9 @@ span.date {
     background: url() 0 bottom repeat;
     font-size: 14px;
     line-height: 35px;
+}
+
+div.side_floatr {
+    float: right;
+    width: 880px;
 }
