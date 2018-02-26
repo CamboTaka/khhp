@@ -619,6 +619,15 @@ if(($jumpPage == 0 && $sendmail == 1) || ($jumpPage == 0 && ($confirmDsp == 0 &&
 </div>
 <?php copyright(); ?>
 <!--  CV率を計測する場合ここにAnalyticsコードを貼り付け -->
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-98444003-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-98444003-1');
+</script>
 </body>
 </html>
 <?php
