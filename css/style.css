@@ -729,6 +729,9 @@ img {
   #page-block {
     height: 250px;
   }
+  #page-block1 {
+    height: 0px;
+  }
   #contents, nav#menubar {
     margin-right: 6px;
     margin-left: 6px
@@ -861,7 +864,7 @@ img {
     width: 410px;
   }
   #footer_logoimg {
-    width: 410px;
+    width: 100%;
   }
   img.imgosusume {
     display: none;
@@ -920,7 +923,7 @@ img {
   }
   header .inner {
     /* height: 00px; */
-    width: 390px;
+    width: 100%;
     /* text-align: center; */
     background-repeat: no-repeat;
     font-size: small margin: 29px 0 0 10px;
@@ -941,7 +944,7 @@ img {
   img#imgtitle {
     float: left;
     width: 63%;
-    display: inline-block;
+    display: none;
     vertical-align: top;
     position: relative;
     top: 0px;
@@ -950,6 +953,7 @@ img {
   img#logo {
     right: 208px;
     float: left;
+    display: none;
     position: relative;
     top: -40px;
     left: 35px;
@@ -1118,8 +1122,9 @@ img {
     height: 300px;
     width: 100%
   }
-  header #title .wrap {
-    font-size: 12%;
+  header #title .h1 {
+    font-size: 78%;
+    padding-left: 5px;
   }
   header .list_bukken {
     display: none;
@@ -2208,7 +2213,10 @@ div#page-block {
   width: 980px;
   margin: 0 auto;
 }
-
+.block-inner1 {
+  width: 1132px;
+  margin: 0 auto;
+}
 .border-holder {
   background-color: #fff4dd;
   background-image: none;
@@ -2986,4 +2994,7 @@ div.side_floatr {
     /* border-left: 3px solid #f2ad02; */
     margin-bottom: .5em;
     color: #000;
+}
+img#footer_logoimg_1 {
+    display: none;
 }
