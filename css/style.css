@@ -1129,8 +1129,18 @@ img {
   header .list_bukken {
     display: none;
   }
+  .inner #footer_logoimg_1{
+    margin: 0 0 -45px -188px;
+    width: 93%;
+  }
+  #contents .side_floatr {
+    float: right;
+    width: 100%;
+  }
+  #imgtitle#footer_logoimg_1 {
+    display: block;
+  }
 }
-
 .inner h1 {
   margin-top: 10px;
   margin-left: -20px
@@ -2247,6 +2257,7 @@ div#page-block {
   font-size: large;
   padding: 15px;
   text-align: center;
+  clear: both;
 }
 
 font.midashi_lp {
@@ -2995,6 +3006,194 @@ div.side_floatr {
     margin-bottom: .5em;
     color: #000;
 }
-img#footer_logoimg_1 {
+.inner.close_1 {
     display: none;
+}
+.textarea_lp1 {
+    width: 47%;
+    padding: 5px;
+    float: right;
+    line-height: 29px;
+}
+.textarea_lp2 {
+    width: 50%;
+    float: left;
+    line-height: 26px;
+}
+img.in_images {
+    width: 45%;
+    padding: 13px;
+    margin-top: 0px;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+.snip1361 {
+  font-family: 'Quattrocento', Arial, sans-serif;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  /* margin: 10px 1%; */
+  min-width: 566px;
+  max-width: 375px;
+  width: 100%;
+  color: #141414;
+  text-align: left;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+.snip1361 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.snip1361 img {
+  max-width: 100%;
+  vertical-align: top;
+}
+.snip1361 figcaption {
+  position: absolute;
+  top: calc(90%);
+  width: 100%;
+  background-color: #ffffff;
+  padding: 15px 25px 65px;
+}
+.snip1361 figcaption:before {
+  position: absolute;
+  content: '';
+  z-index: 2;
+  bottom: 100%;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-image: -webkit-linear-gradient(top, transparent 0%, #ffffff 100%);
+  background-image: linear-gradient(to bottom, transparent 0%, #ffffff 100%);
+}
+.snip1361 h3,
+.snip1361 p {
+  margin: 0 0 10px;
+}
+.snip1361 h3 {
+  font-weight: 300;
+  font-size: 1.4em;
+  line-height: 1.2em;
+  font-family: 'Oswald', Arial, sans-serif;
+  text-transform: uppercase;
+}
+.snip1361 p {
+  font-size: 0.9em;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+.snip1361 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+.snip1361:hover figcaption,
+.snip1361.hover figcaption {
+  top: 250px;
+}
+/***　おしゃれテーブル5　ポルカドット ***/
+
+.osare5-table {
+ width:100%;
+ table-layout: fixed;
+   border: none !important;
+    border-collapse: separate;
+    border-spacing: 4px 4px;
+}
+
+
+.osare5-table th {
+   border: none !important;
+}
+
+.osare5-table tbody td {
+	border: none !important;
+	background-color:#f0fff0 !important;
+	border-bottom: solid 2px #f9f9f9 !important;
+	background-image: radial-gradient(white 15%, transparent 16%),
+	radial-gradient(white 15%, transparent 16%);
+	background-size:30px 30px;
+	background-position: 0 0, 15px 15px;
+
+}
+
+/* ヘッダー */
+.osare5-table thead th {
+	font-weight: bold;
+	border-radius: 5px 5px 5px 5px;
+	background:#f6f0ff;
+}
+
+/* フッター（比較表と色つけたとき用） */
+.osare5-table tfoot td {
+border-radius: 0 0 10px 10px;
+}
+
+
+/* ボディ項目 */
+.osare5-table tbody th {
+	border-radius: 5px 5px 5px 5px;
+	background:#fffcf0;
+	font-weight: bold;
+	border-bottom: solid 2px #f9f9f9 !important;
+	line-height:4.5em;
+}
+
+/* フッター項目 */
+.osare5-table tfoot th {
+ background:none;
+ line-height:3em;
+ font-weight: bold;
+}
+
+
+/* フッターデータ(フッターがあるときのみ有効) */
+.osare5-hikaku tfoot td {
+ border: none !important;
+ background:none;
+ text-align:center;
+ font-weight:600;
+ font-size:1em;
+}
+
+
+/* ボディデータ */
+.osare5-table tbody td {
+ text-align:center;
+}
+
+.osare5-table thead th:first-child  {
+	background:none;
+}
+
+
+/* 最終行のボーダーをなくす */
+.osare5-table tbody tr:last-child th,
+.osare5-table tbody tr:last-child td {
+ border-bottom:none !important;
+}
+
+/* スマホ調整 */
+@media (max-width: 767px) {
+	.osare5-table thead th,
+	.osare5-table tbody th {
+			padding:0;
+	}
+	.osare5-table tfoot td {
+	padding:0;
+	font-size:0.9em;
+	}
+.osare5-table tfoot td:nth-child(2) {
+	 font-size:1em;
+	}
+}
+img#footer_logoimg_1 {
+  display: none;
 }
