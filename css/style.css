@@ -3197,3 +3197,6 @@ border-radius: 0 0 10px 10px;
 img#footer_logoimg_1 {
   display: none;
 }
+#nav-drawer {
+  display: none;
+}
